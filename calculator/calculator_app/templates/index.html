@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hey..this is tuhins calculator</h1>
+    <form method="post">
+      {% csrf_token %}
+      <input type="number" name="fNum" placeholder="Enter First Number" />
+      <input type="number" name="lNum" placeholder="Enter Second Number" />
+      <select name="indicator" id="">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
